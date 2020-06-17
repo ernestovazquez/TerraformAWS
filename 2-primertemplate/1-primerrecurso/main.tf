@@ -5,15 +5,15 @@ terraform {
 provider "aws" {
   region = "eu-west-1"
   allowed_account_ids = ["559488328847"]
-  profile = "proyectoterra"
+  profile = "proyectoernesto"
 }
 
 resource "aws_vpc" "vpc" {
-  cidr_block = 10.0.0.0/16
-  enable_dns_hostnames = true
-  enable_dns_support = true
+  cidr_block = "10.0.0.0/16"
+  enable_dns_hostnames = false
+  enable_dns_support = false
   tags = {
-    Name = "proyectoterra"
+    Name = "proyectoernesto"
   }
 }
 

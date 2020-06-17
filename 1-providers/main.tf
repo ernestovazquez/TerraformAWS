@@ -5,5 +5,5 @@ terraform {
 provider "aws" {
   region = "eu-west-1"
   allowed_account_ids = ["559488328847"]
-  profile = "proyectoterra"
+  profile = "proyectoernesto"
 }
