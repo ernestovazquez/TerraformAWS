@@ -2,7 +2,7 @@ resource "aws_launch_configuration" "web-server" {
   name_prefix = "web-server-"
   image_id = lookup(var.aws_amis, var.aws_region)
   instance_type = var.instance_type
-  key_name = "proyectoterra"
+  key_name = "proyectoernesto"
   security_groups = ["${aws_security_group.web-sg.id}"]
   user_data = file("templates/userdata.tpl")
   lifecycle {
